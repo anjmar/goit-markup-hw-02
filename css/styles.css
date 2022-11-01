@@ -10,18 +10,8 @@
   --footer-background-color: #2f303a;
   --logo-font-family: 'Raleway', 'cursive';
 }
-
-/*основний колір тексту #757575; */
-/*вторичний колір тексту #212121; */
-/* білий #FFFFFF; */
-/* чорний #000000; */
-/* акцент #2196F3; */
-/* вторичний колір фону #F5F4FA; */
-/*колір фону футера #2F303A; */
-/* колір фону шапки #2F303A;*/
-
 body {
-  background-color: ffffff;
+  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -34,6 +24,10 @@ body {
 }
 .link {
   text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
 }
 .logo {
   color: var(--black-text-color);
@@ -146,4 +140,74 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+}
+/* -------footer-------*/
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-text-color);
+}
+.footer-logo-web {
+  color: var(--accent-text-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-text {
+  color: var(--white-text-color);
+}
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------portfolio page---------*/
+.btn {
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: var(--accent-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+  cursor: pointer;
+  color: var(--white-text-color);
+}
+.proposition-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.proposition-text {
+  font-size: 16px;
+  line-height: 1.87;
 }
